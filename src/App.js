@@ -55,6 +55,7 @@ export default class App extends React.Component {
                     {this.state.commands.map((command, index) => {
                       return (
                         <MenuItem
+                          selected={this.state.command}
                           key={index}
                           handleMenuItemChange={this.handleMenuItemChange}
                           menuText={command}
